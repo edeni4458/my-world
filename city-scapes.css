@@ -1,0 +1,221 @@
+body {
+    margin: 0 auto;
+}
+
+.avatar {
+    height: 50px;
+    width: 15px;
+    background-color: red;
+    border-radius: 65%;
+    border: none;
+    position: absolute;
+}
+
+.trigger_day-night  {
+
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: ridge darkslategray 1pc;
+    background: linear-gradient(359deg, #21F0F3 0%, #00BCD4 50%, #2162F3 100%);
+}
+
+.section-night {
+    background: linear-gradient(359deg, #204546 0%, #497c82 0%, #022c85 100%);
+    transition: 25s ease-in;
+    flex-wrap:initial;
+}
+
+.sky-sphere {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 22px;
+}
+
+.clouds  {
+    display: flex;
+    position:relative;
+    align-self: flex-start;
+    justify-self:stretch;  
+    animation: moveClouds 55s linear infinite; /* Apply animation */
+}
+
+@keyframes moveClouds {
+    0% {
+        left: -35%; /* Start off-screen to the left */
+    }
+    100% {
+        left: 150vh; /* Move off-screen to the right */
+    }
+}
+
+
+
+.clouds img {
+    height: 55px;
+}
+
+
+.sun {
+    min-height: 78px;
+    min-width: 78px;
+    border-radius: 50%;
+    align-self: flex-start;
+    background-color: rgb(255, 255, 0);
+    border:double rgb(255, 136, 0) 5px;
+    margin-top: 20px;
+    position: relative;
+    transition: 1s ease-out;
+
+}
+
+.moon {
+    min-height: 78px;
+    min-width: 78px;
+    border-radius: 50%;
+    align-self: flex-start;
+    background-color: whitesmoke;
+    border:double lightgoldenrodyellow 5px;
+    margin-top: 20px;
+    position: relative;
+    transition: 1s ease-in;
+}
+
+aside {
+    height: 30vh;
+    background-color: #442220;
+}
+
+
+.plane {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.plane img {
+    height: 35px;
+    position: relative;
+    animation: movePlane 10s linear infinite; /* Apply animation */
+}
+
+@keyframes movePlane {
+    0% {
+        left: -35%; /* Start off-screen to the left */
+    }
+    100% {
+        left: 205vh; /* Move off-screen to the right */
+    }
+}
+
+.ground-sphere {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 22px;
+}
+
+.buildings {
+    height: 60px;
+    width: 50px;
+    background: linear-gradient(359deg, #708090fe 0%, #808080 50%, #AA9D55 100%);
+    border: ridge darkslategray 2px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.buildings:nth-child(4) {
+    height: 130px;
+}
+.buildings:nth-child(7) {
+    height: 105px;
+}
+
+.windows-1,.windows-2,.windows-3,.windows-4 {
+    height: 10px;
+    width: 4px;
+    background-color: aliceblue;
+    border: solid black 2px;
+}
+
+.windows-2, .windows-4{
+    align-self:center;
+}
+.car {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: moveCar 15s linear infinite;
+}
+@keyframes moveCar {
+    0% {
+        left: -35%; /* Start off-screen to the left */
+    }
+    100% {
+        left: 150vh; /* Move off-screen to the right */
+    }
+    }
+    
+
+.top-of_car {
+    height: 5px;
+    width: 38px;
+    background-color: #2162F3;
+    border-top-right-radius: 2px;
+    border-top: dotted black 0.1px;
+    border-right: dotted black 0.1px;
+    border-left: dotted black 0.1px;
+}
+
+.blue-car {
+    height: 12px;
+    width: 48px;
+    background-color: #2162F3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 20px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top: dotted black 0.1px;
+    border-right: dotted black 0.1px;
+    border-left: dotted black 0.1px;
+}
+
+.two_tires{
+    height: 5px;
+    width: 5px;
+    background-color: silver;
+    border: solid black 3px;
+    border-radius: 50%;
+}
+
+
+
+.tree {
+    height: 30px;
+    width: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tree-top {
+    height: 15px;
+    width: 20px;
+    border-radius: 20%;
+    background-color: green;
+    position: relative;
+}
+
+.tree-trunk {
+    background-color: #442220;
+    height: 30px;
+    width: 3px;
+}
